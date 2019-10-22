@@ -7,10 +7,11 @@ import router from "./router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBroom,
-  faExclamationCircle
+  faExclamationCircle,
+  faUser
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faBroom, faExclamationCircle);
+library.add(faBroom, faExclamationCircle, faUser);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // Buefy

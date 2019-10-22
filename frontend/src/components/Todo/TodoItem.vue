@@ -20,7 +20,11 @@
           class="has-text-danger"
           size="is-medium"
         ></b-icon>
-        <b-progress :value="20" size="is-small"></b-progress>
+        <b-progress :value="20" type="is-warning" size="is-small"></b-progress>
+        <div class="people">
+          <b-icon pack="fas" icon="user" size="is-small"></b-icon>
+          <span>0</span>
+        </div>
       </div>
     </div>
   </div>
@@ -41,6 +45,11 @@ export default {
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
   .title {
     font-size: 1.25rem;
   }
@@ -54,5 +63,19 @@ export default {
   // display: flex;
   justify-content: center;
   align-items: center;
+
+  .people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      margin-left: 0.15rem;
+    }
+  }
+}
+
+.progress-wrapper {
+  margin-bottom: 0.25rem !important;
 }
 </style>
