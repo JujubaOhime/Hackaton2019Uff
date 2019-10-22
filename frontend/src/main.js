@@ -8,10 +8,13 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBroom,
   faExclamationCircle,
-  faUser
+  faUser,
+  faTools
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faBroom, faExclamationCircle, faUser);
+
+library.add(faBroom, faExclamationCircle, faUser, faTools);
+
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // Buefy
