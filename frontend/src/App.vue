@@ -45,4 +45,8 @@
 
 <style lang="scss">
 @import "@/styles/theme.scss";
+body {
+  min-height: 100vh;
+  background-color: $primary;
+}
 </style>
