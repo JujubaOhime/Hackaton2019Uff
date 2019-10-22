@@ -2,6 +2,10 @@
   <div class="home">
     <section class="section">
       <div class="container">
+        <!-- Header -->
+        <h1 class="title header">Dashboard</h1>
+
+        <!-- Tiles -->
         <div class="tile is-ancestor">
           <div class="tile is-parent is-4">
             <article class="tile is-child box">

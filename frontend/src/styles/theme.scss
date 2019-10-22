@@ -1,3 +1,5 @@
+/* Variable Customization */
+
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
 
@@ -6,6 +8,8 @@ $primary: #305f72;
 $primary-invert: findColorInvert($primary);
 $info: #568ea6;
 $info-invert: findColorInvert($info);
+$warning: #f1d1b5;
+$warning-invert: findColorInvert($warning);
 $accent: #f18c8e;
 $accent-invert: findColorInvert($accent);
 $twitter: #4099ff;
@@ -67,3 +71,9 @@ $link-focus-border: $primary;
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+/* Classes */
+.header {
+  color: $white;
+  text-align: center;
+}
