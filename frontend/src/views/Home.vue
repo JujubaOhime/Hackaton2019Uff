@@ -1,6 +1,14 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+    <section class="section">
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-4">
+            <article class="tile is-child box">a</article>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
