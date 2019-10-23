@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-for="(todo, key) in todos" :key="key">
-      <TodoItem> </TodoItem>
+      <TodoItem :todo="todo"> </TodoItem>
       <hr v-if="key != todos.length - 1" />
     </div>
   </div>
@@ -23,10 +23,22 @@ export default {
     // Get Todos
     this.todos = [
       {
-        description: "Test 1"
+        category: "Limpeza",
+        icon: "broom",
+        description: "Dei PT",
+        priority: 80,
+        people: []
       },
       {
-        description: "Test 2"
+        category: "Manutenção",
+        icon: "tools",
+        description: "Consertar Ar",
+        priority: 30,
+        people: [
+          {
+            name: "Thomas"
+          }
+        ]
       }
     ];
   }

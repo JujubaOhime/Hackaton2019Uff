@@ -4,14 +4,14 @@
       <div class="column category-icon">
         <b-icon
           pack="fas"
-          icon="broom"
+          :icon="todo.icon"
           class="has-text-accent"
           size="is-large"
         ></b-icon>
       </div>
       <div class="column description">
-        <p class="title has-text-primary">Limpeza > Vomito</p>
-        <p class="subtitle has-text-info">Po dei PT</p>
+        <p class="title has-text-primary">{{ todo.category }}</p>
+        <p class="subtitle has-text-info">{{ todo.description }}</p>
       </div>
       <div class="column status">
         <b-icon
@@ -20,7 +20,15 @@
           class="has-text-danger"
           size="is-medium"
         ></b-icon>
-        <b-progress :value="20" size="is-small"></b-progress>
+        <b-progress
+          :value="todo.priority"
+          type="is-warning"
+          size="is-small"
+        ></b-progress>
+        <div class="people">
+          <b-icon pack="fas" icon="user" size="is-small"></b-icon>
+          <span>{{ todo.people.length }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -28,7 +36,8 @@
 
 <script>
 export default {
-  name: "TodoItem"
+  name: "TodoItem",
+  props: ["todo"]
 };
 </script>
 
@@ -41,6 +50,11 @@ export default {
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
   .title {
     font-size: 1.25rem;
   }
@@ -54,5 +68,19 @@ export default {
   // display: flex;
   justify-content: center;
   align-items: center;
+
+  .people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      padding-left: 0.15rem;
+    }
+  }
+}
+
+.progress-wrapper {
+  margin-bottom: 0.25rem !important;
 }
 </style>

@@ -2,6 +2,10 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+//  Vuex
+import Vuex from "vuex";
+Vue.use(Vuex);
+import { store } from "./store/index";
 
 // Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -64,5 +68,6 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount("#app");
