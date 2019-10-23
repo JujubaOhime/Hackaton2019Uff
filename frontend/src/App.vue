@@ -13,7 +13,7 @@
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           Home
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/dashboard' }">
+        <b-navbar-item tag="router-link" :to="{ path: '/localeChoose' }">
           Dashboard
         </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/relatorios' }">

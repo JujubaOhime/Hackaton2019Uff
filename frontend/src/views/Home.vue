@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <NavbarMobile></NavbarMobile>
-    <section class="section ">
+    <NavbarMobile v-if="mobile"></NavbarMobile>
+    <section class="section fade-in">
       <div class="container ">
         <div class="background-img">
           <img
@@ -9,7 +9,7 @@
             alt="Lightweight UI components for Vue.js based on Bulma"
           />
         </div>
-        <h1 class="has-text-white">Olá, Fulano</h1>
+        <h1 class="has-text-white">Olá, Fulanx</h1>
         <h2 class="has-text-white">Seja bem vindo(a)!</h2>
         <div class="actions">
           <div class="columns is-centered is-mobile">
@@ -113,10 +113,11 @@ export default {
 @import "@/styles/theme.scss";
 
 .actions {
-  height: calc(120vh - 70px - 86px - 24px - 48px - 48px);
-  vertical-align: middle;
-  display: table-cell;
-  width: 100vw;
+  width: 80vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 h1 {
   font-size: 1.5em;
@@ -139,15 +140,19 @@ img {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 15vh;
-  width: 15vh;
+  height: 20vh;
+  max-height: 20vw;
+  min-height: 10vh;
+  width: 20vh;
+  max-width: 20vw;
+  min-width: 10vh;
   border-radius: 15px;
   cursor: pointer;
 }
 
 .customIcon {
   width: 100%;
-  font-size: 4em;
+  font-size: 300%;
   color: $accent;
 }
 

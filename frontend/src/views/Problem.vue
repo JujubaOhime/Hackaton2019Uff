@@ -176,12 +176,13 @@ export default {
         priority: 80,
         people: []
       };
-      console.log(todo);
 
       this.$store.commit("addTodo", {
         todo: todo,
         locale: this.selections.campus
       });
+
+      this.$router.push({ name: "home" });
     }
   }
 };

@@ -24,22 +24,58 @@ export const store = new Vuex.Store({
       {
         name: "Manutenção",
         icon: "tools",
-        subs: []
+        subs: [
+          {
+            name: "Rotina",
+            icon: "tools"
+          },
+          {
+            name: "Pontual",
+            icon: "tools"
+          }
+        ]
       },
       {
         name: "Segurança",
         icon: "shield-alt",
-        subs: []
+        subs: [
+          {
+            name: "Rotina",
+            icon: "shield-alt"
+          },
+          {
+            name: "Pontual",
+            icon: "shield-alt"
+          }
+        ]
       },
       {
         name: "Emergência",
         icon: "first-aid",
-        subs: []
+        subs: [
+          {
+            name: "Rotina",
+            icon: "first-aid"
+          },
+          {
+            name: "Pontual",
+            icon: "first-aid"
+          }
+        ]
       },
       {
         name: "Ambiente",
         icon: "thermometer-half",
-        subs: []
+        subs: [
+          {
+            name: "Rotina",
+            icon: "thermometer-half"
+          },
+          {
+            name: "Pontual",
+            icon: "thermometer-half"
+          }
+        ]
       }
     ],
     locales: [
@@ -73,7 +109,7 @@ export const store = new Vuex.Store({
             category: "Limpeza",
             subcategory: "Pontual",
             icon: "broom",
-            description: "Dei PT",
+            description: "Vômito",
             priority: 80,
             people: []
           },
@@ -89,7 +125,7 @@ export const store = new Vuex.Store({
             category: "Segurança",
             subcategory: "Assalto",
             icon: "shield-alt",
-            description: "Rio ta foda",
+            description: "Nenhuma",
             priority: 30,
             people: [
               {
@@ -104,7 +140,7 @@ export const store = new Vuex.Store({
             category: "Emergência",
             subcategory: "Saúde",
             icon: "first-aid",
-            description: "Geral morrendo",
+            description: "Incidente Hospitalar",
             priority: 100,
             people: [
               {
@@ -123,6 +159,26 @@ export const store = new Vuex.Store({
       {
         campus: "Praia Vermelha",
         unit: "Bloco H",
+        rooms: [
+          {
+            name: "Sala 402",
+            icon: ""
+          },
+          {
+            name: "Sala 403",
+            icon: ""
+          },
+
+          {
+            name: "Sala 404",
+            icon: ""
+          },
+
+          {
+            name: "Sala 405",
+            icon: ""
+          }
+        ],
         todos: [
           {
             category: "Limpeza",
@@ -185,10 +241,7 @@ export const store = new Vuex.Store({
     addTodo(state, payload) {
       let todo = payload.todo;
       let locale = payload.locale;
-      console.log(state.locales);
       state.locales[locale].todos = [...state.locales[locale].todos, todo];
-
-      console.log(state.locales);
     }
   },
   getters: {
