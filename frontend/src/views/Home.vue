@@ -19,7 +19,7 @@
               "
                 @click="
                   () => {
-                    goToLink('problem1');
+                    goToLink('problem');
                   }
                 "
               >
@@ -89,11 +89,6 @@ import NavbarMobile from "@/components/Navbar/NavbarMobile";
 export default {
   name: "home",
   components: { NavbarMobile },
-  data() {
-    return {
-      thomas: "abc"
-    };
-  },
   computed: {
     mobile() {
       return this.$store.getters.mobile;
@@ -107,9 +102,9 @@ export default {
   },
 
   mounted() {
-    if (!this.mobile) {
-      this.$router.push({ name: "localeChoose" });
-    }
+    // if (!this.mobile) {
+    //   this.$router.push({ name: "localeChoose" });
+    // }
   }
 };
 </script>

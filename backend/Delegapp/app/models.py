@@ -27,10 +27,10 @@ class Relacionado(models.Model):
 
 
 class Local(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField(max_length=500)
+    campus=models.CharField(max_length=100)
+    unit =models.CharField(max_length=100)
     def __str__(self):
-        return self.name
+        return f"{self.campus} - {self.unit}"
 
 class Category(models.Model):
     name = models.CharField(max_length=100)

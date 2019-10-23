@@ -6,10 +6,56 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
   state: {
     mobile: window.innerWidth <= 700,
+    categories: [
+      {
+        name: "Limpeza",
+        icon: "broom",
+        subs: [
+          {
+            name: "Rotina",
+            icon: "broom"
+          },
+          {
+            name: "Pontual",
+            icon: "broom"
+          }
+        ]
+      },
+      {
+        name: "Manutenção",
+        icon: "tools",
+        subs: []
+      },
+      {
+        name: "Segurança",
+        icon: "shield-alt",
+        subs: []
+      },
+      {
+        name: "Emergência",
+        icon: "first-aid",
+        subs: []
+      },
+      {
+        name: "Ambiente",
+        icon: "thermometer-half",
+        subs: []
+      }
+    ],
     locales: [
       {
         campus: "Praia Vermelha",
         unit: "IC",
+        rooms: [
+          {
+            name: "Sala de Estudos",
+            icon: ""
+          },
+          {
+            name: "Lab 301",
+            icon: ""
+          }
+        ],
         todos: [
           {
             category: "Limpeza",
@@ -135,10 +181,19 @@ export const store = new Vuex.Store({
     },
     changeLocaleSelected(state, localeSelected) {
       state.localeSelected = localeSelected;
+    },
+    addTodo(state, payload) {
+      let todo = payload.todo;
+      let locale = payload.locale;
+      console.log(state.locales);
+      state.locales[locale].todos = [...state.locales[locale].todos, todo];
+
+      console.log(state.locales);
     }
   },
   getters: {
     mobile: state => state.mobile,
+    categories: state => state.categories,
     locales: state => state.locales,
     localeSelected: state => state.locales[state.localeSelected]
   }

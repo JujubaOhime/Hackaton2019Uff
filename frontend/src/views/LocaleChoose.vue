@@ -94,6 +94,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "LocaleChoose",
   computed: {
@@ -106,6 +107,11 @@ export default {
       this.$store.commit("changeLocaleSelected", key);
       this.$router.push({ name: "dashboard" });
     }
+  },
+  mounted() {
+    axios.get("http://localhost:8000/local").then(response => {
+      console.log(response);
+    });
   }
 };
 </script>
