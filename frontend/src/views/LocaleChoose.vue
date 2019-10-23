@@ -17,7 +17,8 @@
               }
             "
           >
-            <h1 class="subtitle has-text-centered">{{ locale.name }}</h1>
+            <h1 class="subtitle has-text-centered">{{ locale.campus }}</h1>
+            <h1 class="subtitle has-text-centered">{{ locale.unit }}</h1>
             <div class="columns is-centered">
               <div class="column has-text-centered is-one-third">
                 <span>
@@ -123,6 +124,12 @@ export default {
     font-size: 1.15rem;
     color: $danger;
     font-weight: 600;
+
+    &:nth-child(2) {
+      margin-top: -1rem;
+      font-size: 1rem;
+      font-weight: normal;
+    }
   }
   .column {
     span {

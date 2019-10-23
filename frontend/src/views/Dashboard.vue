@@ -13,7 +13,7 @@
             rounded
             @click="localeChoose"
           >
-            {{ locale }}
+            {{ locale.campus }} - {{ locale.unit }}
           </b-button>
         </div>
 
@@ -48,7 +48,7 @@ export default {
   components: { TodoList, ProblemsCategory },
   computed: {
     locale() {
-      return this.$store.getters.localeSelected.name;
+      return this.$store.getters.localeSelected;
     }
   },
   methods: {

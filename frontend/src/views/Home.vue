@@ -94,10 +94,21 @@ export default {
       thomas: "abc"
     };
   },
+  computed: {
+    mobile() {
+      return this.$store.getters.mobile;
+    }
+  },
 
   methods: {
     goToLink(link) {
       this.$router.push({ name: link });
+    }
+  },
+
+  mounted() {
+    if (!this.mobile) {
+      this.$router.push({ name: "localeChoose" });
     }
   }
 };
@@ -107,7 +118,7 @@ export default {
 @import "@/styles/theme.scss";
 
 .actions {
-  height: calc(100vh - 70px - 86px - 24px - 48px - 48px);
+  height: calc(120vh - 70px - 86px - 24px - 48px - 48px);
   vertical-align: middle;
   display: table-cell;
   width: 100vw;
@@ -132,7 +143,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   height: 15vh;
+  width: 15vh;
   border-radius: 15px;
   cursor: pointer;
 }

@@ -40,12 +40,12 @@
 
 <script>
 export default {
-  data() {
-    return {
-      mobile: window.innerWidth <= 700
+  computed: {
+    mobile() {
+      return this.$store.getters.mobile;
     }
-  },
-}
+  }
+};
 </script>
 
 <style lang="scss">

@@ -5,10 +5,11 @@ Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   state: {
-    mobile: undefined,
+    mobile: window.innerWidth <= 700,
     locales: [
       {
-        name: "Praia Vermelha - IC",
+        campus: "Praia Vermelha",
+        unit: "IC",
         todos: [
           {
             category: "Limpeza",
@@ -74,7 +75,8 @@ export const store = new Vuex.Store({
         ]
       },
       {
-        name: "Praia Vermelha - Bloco H",
+        campus: "Praia Vermelha",
+        unit: "Bloco H",
         todos: [
           {
             category: "Limpeza",
