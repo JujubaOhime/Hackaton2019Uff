@@ -13,6 +13,11 @@ class Employee(User):
     cellphone = models.CharField(max_length=15)
     cep = models.CharField(max_length=15)
     complement = models.TextField(max_length=400)
+
+    employer = models.ManyToManyField("self", null=True, blank=True, related_name="employee", default=None)
+
+    employee = models.ManyToManyField("self", null=True, blank=True, related_name="employer", default=None)  
+
     def __str__(self):
         return self.email
 
@@ -30,6 +35,11 @@ class Local(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=500)
+
+    parent_category = models.ManyToManyField("self", null=True, blank=True, related_name="subcategory")
+
+    subcategory = models.ManyToManyField("self", null=True, blank=True, related_name="parent_category")  
+
     def __str__(self):
         return self.name
   
@@ -46,7 +56,6 @@ class ReportRecord(models.Model):
     description = models.TextField(max_length=1000)
     def __str__(self):
         return str(self.date)+ str(self.description)
-
     
 class act_in(models.Model):
     expertise = models.ForeignKey(Category, related_name="expertise_a", on_delete=models.SET_NULL, null=True)

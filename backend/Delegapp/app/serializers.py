@@ -22,7 +22,7 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Category
-        fields = ['id','name','description']
+        fields = ['id','name','description', 'parent_category', 'subcategory']
 
 class LocalSerializer(serializers.HyperlinkedModelSerializer):
     
@@ -48,7 +48,7 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     
     class Meta:
         model = Employee
-        fields = ['id', 'url', 'email', 'nome', 'disponibility', 'cellphone', 'cep', 'complement']
+        fields = ['id', 'url', 'email', 'nome', 'disponibility', 'cellphone', 'cep', 'complement', 'employee', 'employer']
 
 
 class act_inSerializer(serializers.HyperlinkedModelSerializer):
