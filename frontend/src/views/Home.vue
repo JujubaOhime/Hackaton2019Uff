@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <NavbarMobile title></NavbarMobile>
+    <NavbarMobile></NavbarMobile>
     <section class="section ">
       <div class="container ">
         <div class="background-img">

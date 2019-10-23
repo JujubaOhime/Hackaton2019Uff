@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/styles/theme.scss";
 .navbar {
   border-top-left-radius: 25px;
