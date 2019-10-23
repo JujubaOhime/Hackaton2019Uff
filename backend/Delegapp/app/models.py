@@ -36,9 +36,9 @@ class Category(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=500)
 
-    parent_category = models.ManyToManyField("self", null=True, blank=True, related_name="subcategory")
+    parent_category = models.ManyToManyField("self", null=True, blank=True, related_name="subcategory", default=None)
 
-    subcategory = models.ManyToManyField("self", null=True, blank=True, related_name="parent_category")  
+    subcategory = models.ManyToManyField("self", null=True, blank=True, related_name="parent_category", default=None)  
 
     def __str__(self):
         return self.name
