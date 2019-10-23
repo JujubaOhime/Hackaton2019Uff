@@ -5,18 +5,16 @@
         <!-- Header -->
         <h1 class="title header">Dashboard</h1>
 
-        <!-- Locale select -->
-        <b-field id="locale-select">
-          <b-select
-            placeholder="Local"
+        <!-- Locale -->
+        <div class="locale">
+          <font-awesome-icon
             icon="map-marker-alt"
-            icon-pack="fas"
-            v-model="locale"
-          >
-            <option value="1">Praia Vermelha - IC</option>
-            <option value="2">Praia Vermelha - Bloco H</option>
-          </b-select>
-        </b-field>
+            class="has-text-danger"
+          ></font-awesome-icon>
+          <span class="has-text-white">
+            {{ locale }}
+          </span>
+        </div>
 
         <!-- Tiles -->
         <div class="tile is-ancestor">
@@ -47,19 +45,23 @@ import ProblemsCategory from "@/components/Charts/ProblemsCategory";
 export default {
   name: "Dashboard",
   components: { TodoList, ProblemsCategory },
-  data() {
-    return {
-      locale: 1
-    };
+  computed: {
+    locale() {
+      return this.$store.getters.localeSelected.name;
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/styles/theme.scss";
-/deep/ #locale-select {
-  .icon {
-    color: $danger;
+.locale {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  svg {
+    font-size: 1rem;
   }
 }
 

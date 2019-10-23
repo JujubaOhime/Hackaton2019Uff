@@ -15,34 +15,34 @@
 
       <div class="columns is-centered">
         <div class="column is-6">
-          <span>
+          <span class="encarregados-title">
             <b>Encarregados</b>
-            <b-table :data="todo.people" hoverable>
-              <template slot-scope="props">
-                <b-table-column field="name" label="Nome" width="40">
-                  {{ props.row.name }}
-                </b-table-column>
-                <b-table-column label="" width="40" numeric>
-                  <b-button
-                    type="is-danger"
-                    icon-right="minus-circle"
-                    rounded
-                  />
-                </b-table-column>
-              </template>
-
-              <template slot="empty">
-                <section class="section">
-                  <div class="content has-text-grey has-text-centered">
-                    <p>
-                      <b-icon icon="sad-cry" size="is-medium"> </b-icon>
-                    </p>
-                    <p>Nenhum encarregado.</p>
-                  </div>
-                </section>
-              </template>
-            </b-table>
+            <font-awesome-icon
+              icon="plus-circle"
+              class="has-text-success"
+            ></font-awesome-icon>
           </span>
+          <b-table :data="todo.people" hoverable>
+            <template slot-scope="props">
+              <b-table-column field="name" label="Nome" width="40">
+                {{ props.row.name }}
+              </b-table-column>
+              <b-table-column label="" width="40" numeric>
+                <b-button type="is-danger" icon-right="minus-circle" rounded />
+              </b-table-column>
+            </template>
+
+            <template slot="empty">
+              <section class="section">
+                <div class="content has-text-grey has-text-centered">
+                  <p>
+                    <b-icon icon="sad-cry" size="is-medium"> </b-icon>
+                  </p>
+                  <p>Nenhum encarregado.</p>
+                </div>
+              </section>
+            </template>
+          </b-table>
         </div>
         <div class="column is-6">
           <span>
@@ -108,6 +108,18 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+  }
+
+  .encarregados-title {
+    display: flex;
+    flex-direction: row;
+    b {
+      flex-grow: 1;
+    }
+
+    svg {
+      cursor: pointer;
     }
   }
 }

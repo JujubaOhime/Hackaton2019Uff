@@ -28,67 +28,20 @@ export default {
   components: { TodoItem, TodoModal },
   data() {
     return {
-      todos: undefined,
       todoSelected: undefined,
       modalActive: false
     };
+  },
+  computed: {
+    todos() {
+      return this.$store.getters.localeSelected.todos;
+    }
   },
   methods: {
     viewModal(key) {
       this.todoSelected = key;
       this.modalActive = true;
     }
-  },
-  mounted() {
-    // Get Todos
-    this.todos = [
-      {
-        category: "Limpeza",
-        subcategory: "Pontual",
-        icon: "broom",
-        description: "Dei PT",
-        priority: 80,
-        people: []
-      },
-      {
-        category: "Manutenção",
-        subcategory: "Equipamento",
-        icon: "tools",
-        description: "Consertar Ar",
-        priority: 30,
-        people: []
-      },
-      {
-        category: "Segurança",
-        subcategory: "Assalto",
-        icon: "shield-alt",
-        description: "Rio ta foda",
-        priority: 30,
-        people: [
-          {
-            name: "Thomas"
-          }
-        ]
-      },
-      {
-        category: "Emergência",
-        subcategory: "Saúde",
-        icon: "first-aid",
-        description: "Geral morrendo",
-        priority: 100,
-        people: [
-          {
-            name: "Thomas"
-          },
-          {
-            name: "Thomas"
-          },
-          {
-            name: "Thomas"
-          }
-        ]
-      }
-    ];
   }
 };
 </script>

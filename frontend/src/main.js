@@ -21,7 +21,9 @@ import {
   faSadCry,
   faTrash,
   faMinus,
-  faMinusCircle
+  faMinusCircle,
+  faPlusCircle,
+  faThermometerHalf
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -37,7 +39,9 @@ library.add(
   faSadCry,
   faTrash,
   faMinus,
-  faMinusCircle
+  faMinusCircle,
+  faPlusCircle,
+  faThermometerHalf
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

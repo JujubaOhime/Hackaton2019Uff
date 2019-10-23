@@ -16,6 +16,9 @@
         <b-navbar-item tag="router-link" :to="{ path: '/dashboard' }">
           Dashboard
         </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/relatorios' }">
+          Relatorios
+        </b-navbar-item>
       </template>
 
       <template slot="end">
