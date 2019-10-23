@@ -12,13 +12,49 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBroom,
   faExclamationCircle,
+  faPlusCircle,
   faUser,
-  faTools
+  faArrowLeft,
+  faHome,
+  faExclamationTriangle,
+  faChartPie,
+  faCheckSquare,
+  faUserPlus,
+  faExclamation,
+  faBell,
+  faShieldAlt,
+  faFirstAid,
+  faTools,
+  faThermometerHalf,
+  faMapMarkerAlt,
+  faBuilding,
+  faDoorClosed,
+  faMinusCircle
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-library.add(faBroom, faExclamationCircle, faUser, faTools);
-
+library.add(
+  faBroom,
+  faExclamationCircle,
+  faPlusCircle,
+  faUser,
+  faArrowLeft,
+  faHome,
+  faExclamationTriangle,
+  faChartPie,
+  faCheckSquare,
+  faUserPlus,
+  faExclamation,
+  faBell,
+  faBroom,
+  faShieldAlt,
+  faFirstAid,
+  faTools,
+  faThermometerHalf,
+  faMapMarkerAlt,
+  faBuilding,
+  faDoorClosed,
+  faMinusCircle
+);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // Buefy

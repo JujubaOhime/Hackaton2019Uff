@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-navbar>
+    <b-navbar v-if="!mobile">
       <template slot="brand">
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           <img
@@ -42,6 +42,16 @@
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      mobile: window.innerWidth <= 700
+    }
+  },
+}
+</script>
 
 <style lang="scss">
 @import "@/styles/theme.scss";
