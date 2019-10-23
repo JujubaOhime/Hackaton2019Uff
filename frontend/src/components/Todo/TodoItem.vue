@@ -11,20 +11,17 @@
       </div>
       <div class="column description">
         <p class="title has-text-primary">{{ todo.category }}</p>
-        <p class="subtitle has-text-info">{{ todo.description }}</p>
+        <p class="subtitle has-text-info">{{ todo.subcategory }}</p>
       </div>
       <div class="column status">
         <b-icon
           pack="fas"
-          icon="exclamation-circle"
-          class="has-text-danger"
+          :icon="todo.people.length > 0 ? 'clock' : 'exclamation-circle'"
+          :class="
+            todo.people.length > 0 ? 'has-text-warning' : 'has-text-danger'
+          "
           size="is-medium"
         ></b-icon>
-        <b-progress
-          :value="todo.priority"
-          type="is-warning"
-          size="is-small"
-        ></b-progress>
         <div class="people">
           <b-icon pack="fas" icon="user" size="is-small"></b-icon>
           <span>{{ todo.people.length }}</span>
@@ -37,11 +34,24 @@
 <script>
 export default {
   name: "TodoItem",
-  props: ["todo"]
+  props: ["todo"],
+  data() {
+    return {
+      modalActive: false
+    };
+  }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/theme.scss";
+
+.todo-item {
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($accent, 0.1);
+  }
+}
 .category-icon {
   flex-grow: 0;
   display: flex;
@@ -65,7 +75,8 @@ export default {
 
 .status {
   flex-grow: 0;
-  // display: flex;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 

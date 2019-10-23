@@ -13,11 +13,32 @@ import {
   faBroom,
   faExclamationCircle,
   faUser,
-  faTools
+  faTools,
+  faClock,
+  faMapMarkerAlt,
+  faFirstAid,
+  faShieldAlt,
+  faSadCry,
+  faTrash,
+  faMinus,
+  faMinusCircle
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faBroom, faExclamationCircle, faUser, faTools);
+library.add(
+  faBroom,
+  faExclamationCircle,
+  faUser,
+  faTools,
+  faClock,
+  faMapMarkerAlt,
+  faFirstAid,
+  faShieldAlt,
+  faSadCry,
+  faTrash,
+  faMinus,
+  faMinusCircle
+);
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

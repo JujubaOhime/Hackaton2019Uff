@@ -8,8 +8,10 @@ $primary: #305f72;
 $primary-invert: findColorInvert($primary);
 $info: #568ea6;
 $info-invert: findColorInvert($info);
-$warning: #f1d1b5;
+$warning: #ffda79;
 $warning-invert: findColorInvert($warning);
+$danger: #ff6b6b;
+$danger-invert: findColorInvert($danger);
 $accent: #f18c8e;
 $accent-invert: findColorInvert($accent);
 $twitter: #4099ff;
@@ -76,4 +78,18 @@ $link-focus-border: $primary;
 .header {
   color: $white;
   text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
 }
