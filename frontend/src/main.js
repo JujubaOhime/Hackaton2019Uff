@@ -34,7 +34,9 @@ import {
   faArrowLeft,
   faHome,
   faTools,
-  faArrowUp
+  faArrowUp,
+  faLightbulb,
+  faToolbox
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -63,7 +65,9 @@ library.add(
   faArrowLeft,
   faHome,
   faTools,
-  faArrowUp
+  faArrowUp,
+  faLightbulb,
+  faToolbox
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

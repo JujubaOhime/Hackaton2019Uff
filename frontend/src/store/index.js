@@ -26,12 +26,16 @@ export const store = new Vuex.Store({
         icon: "tools",
         subs: [
           {
-            name: "Rotina",
+            name: "Conserto",
             icon: "tools"
           },
           {
-            name: "Pontual",
-            icon: "tools"
+            name: "Troca de Equipamento",
+            icon: "toolbox"
+          },
+          {
+            name: "Queda de Recursos (Energia, Rede...)",
+            icon: "lightbulb"
           }
         ]
       },
@@ -111,14 +115,6 @@ export const store = new Vuex.Store({
             icon: "broom",
             description: "Vômito",
             priority: 80,
-            people: []
-          },
-          {
-            category: "Manutenção",
-            subcategory: "Equipamento",
-            icon: "tools",
-            description: "Consertar Ar",
-            priority: 30,
             people: []
           },
           {

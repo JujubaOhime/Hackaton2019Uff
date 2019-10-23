@@ -9,7 +9,7 @@
             alt="Lightweight UI components for Vue.js based on Bulma"
           />
         </div>
-        <h1 class="has-text-white">Olá, Fulanx</h1>
+        <h1 class="has-text-white">Olá, Fulano</h1>
         <h2 class="has-text-white">Seja bem vindo(a)!</h2>
         <div class="actions">
           <div class="columns is-centered is-mobile">
