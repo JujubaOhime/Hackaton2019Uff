@@ -17,7 +17,11 @@ import {
   faCheckSquare,
   faUserPlus,
   faExclamation,
-  faBell
+  faBell,
+  faShieldAlt,
+  faFirstAid,
+  faTools,
+  faThermometerHalf
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
@@ -32,7 +36,12 @@ library.add(
   faCheckSquare,
   faUserPlus,
   faExclamation,
-  faBell
+  faBell,
+  faBroom,
+  faShieldAlt,
+  faFirstAid,
+  faTools,
+  faThermometerHalf
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

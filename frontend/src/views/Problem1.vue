@@ -12,38 +12,38 @@
           "
         >
           <font-awesome-icon
-            icon="user"
+            icon="broom"
             class="customIcon middle"
           ></font-awesome-icon>
           <h2>Limpeza</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="tools"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Técnicos</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="shield-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Segurança</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="first-aid"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Emergência</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="thermometer-half"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Ambiente</h2>
         </div>
       </div>
     </section>
@@ -94,7 +94,6 @@ export default {
 
 .line-background h2 {
   display: flex;
-  width: calc(80vw - 62px);
   text-align: center;
   color: $primary;
   font-size: 20px;

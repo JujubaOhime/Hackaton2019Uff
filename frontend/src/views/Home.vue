@@ -51,7 +51,14 @@
           </div>
           <div class="columns is-centered is-mobile ">
             <div class="column is-one-third">
-              <div class="action-icon-wrapper">
+              <div
+                class="action-icon-wrapper"
+                @click="
+                  () => {
+                    goToLink('todoList');
+                  }
+                "
+              >
                 <font-awesome-icon
                   icon="check-square"
                   class="customIcon"
@@ -136,6 +143,13 @@ img {
   color: $accent;
 }
 
+.home h1 {
+  font-family: "Bevan", cursive;
+}
+
+.home h2 {
+  font-family: "Roboto", sans-serif;
+}
 .problem {
 }
 </style>

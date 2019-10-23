@@ -21,6 +21,29 @@ export default {
   border-top-right-radius: 25px;
 }
 
+h1 {
+  font-family: "Bevan", cursive;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.line-background h2 {
+  font-weight: bold !important;
+  display: flex;
+  text-align: center;
+  color: $primary;
+  font-size: 20px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-background .customIcon {
+  width: 40px;
+}
+
 .navbar-mobile-bottom {
   background-color: $white;
   left: 0;
@@ -43,6 +66,10 @@ export default {
   text-align: center;
   height: 42px;
   margin-top: 15px;
+}
+
+.navbar-mobile-bottom h1 {
+  font-family: "Bevan", cursive;
 }
 
 .navbar-mobile-bottom .middle {

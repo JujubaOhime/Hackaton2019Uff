@@ -72,6 +72,12 @@ const routes = [
     name: "problem8",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Problem8.vue")
+  },
+  {
+    path: "/todoList",
+    name: "todoList",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/TodoList.vue")
   }
 ];
 

@@ -41,10 +41,14 @@ export default {
   border-bottom-right-radius: 25px;
   display: flex;
   justify-content: space-around;
+
+  h1 {
+    font-family: "Bevan", cursive;
+  }
 }
 
 .navbar-mobile-top .customIcon {
-  font-size: 3em;
+  font-size: 30px;
   color: $accent;
   display: flex;
   align-items: center;
