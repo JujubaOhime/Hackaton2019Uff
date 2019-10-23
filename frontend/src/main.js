@@ -7,10 +7,33 @@ import router from "./router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faBroom,
-  faExclamationCircle
+  faExclamationCircle,
+  faPlusCircle,
+  faUser,
+  faArrowLeft,
+  faHome,
+  faExclamationTriangle,
+  faChartPie,
+  faCheckSquare,
+  faUserPlus,
+  faExclamation,
+  faBell
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-library.add(faBroom, faExclamationCircle);
+library.add(
+  faBroom,
+  faExclamationCircle,
+  faPlusCircle,
+  faUser,
+  faArrowLeft,
+  faHome,
+  faExclamationTriangle,
+  faChartPie,
+  faCheckSquare,
+  faUserPlus,
+  faExclamation,
+  faBell
+);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // Buefy
