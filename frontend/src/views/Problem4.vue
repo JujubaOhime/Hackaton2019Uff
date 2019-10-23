@@ -12,38 +12,24 @@
           "
         >
           <font-awesome-icon
-            icon="user"
+            icon="building"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Bloco A</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="building"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Bloco B</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="building"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
-        </div>
-        <div class="line-background">
-          <font-awesome-icon
-            icon="user"
-            class="customIcon middle"
-          ></font-awesome-icon>
-          <h2>Limpeza</h2>
-        </div>
-        <div class="line-background">
-          <font-awesome-icon
-            icon="user"
-            class="customIcon middle"
-          ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Bloco C</h2>
         </div>
       </div>
     </section>

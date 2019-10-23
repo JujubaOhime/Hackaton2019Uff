@@ -12,38 +12,40 @@
           "
         >
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Niterói</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Angra dos Reis</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>
+            Campos dos Goytacazes
+          </h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Macaé</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Petrópolis</h2>
         </div>
       </div>
     </section>

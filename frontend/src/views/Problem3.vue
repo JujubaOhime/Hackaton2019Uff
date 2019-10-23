@@ -12,38 +12,38 @@
           "
         >
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Valonguinho</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Gragoatá</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Praia Vermelha</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Farmácia</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="map-marker-alt"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>IACS</h2>
         </div>
       </div>
     </section>

@@ -21,7 +21,11 @@ import {
   faShieldAlt,
   faFirstAid,
   faTools,
-  faThermometerHalf
+  faThermometerHalf,
+  faMapMarkerAlt,
+  faBuilding,
+  faDoorClosed,
+  faMinusCircle
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(
@@ -41,7 +45,11 @@ library.add(
   faShieldAlt,
   faFirstAid,
   faTools,
-  faThermometerHalf
+  faThermometerHalf,
+  faMapMarkerAlt,
+  faBuilding,
+  faDoorClosed,
+  faMinusCircle
 );
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 

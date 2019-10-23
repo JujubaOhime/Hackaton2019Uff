@@ -12,38 +12,38 @@
           "
         >
           <font-awesome-icon
-            icon="user"
+            icon="building"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Primeiro</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="building"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Segundo</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="building"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Terceiro</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="building"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Quarto</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="building"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Quinto</h2>
         </div>
       </div>
     </section>

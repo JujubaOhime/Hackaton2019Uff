@@ -12,38 +12,38 @@
           "
         >
           <font-awesome-icon
-            icon="user"
+            icon="door-closed"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Banheiro</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="door-closed"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Sala 1</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="door-closed"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Corredor</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="door-closed"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Sala 2</h2>
         </div>
         <div class="line-background">
           <font-awesome-icon
-            icon="user"
+            icon="door-closed"
             class="customIcon middle"
           ></font-awesome-icon>
-          <h2>Limpeza</h2>
+          <h2>Sala 3</h2>
         </div>
       </div>
     </section>
