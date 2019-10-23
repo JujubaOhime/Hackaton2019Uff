@@ -10,40 +10,58 @@ import { store } from "./store/index";
 // Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faBroom,
-  faExclamationCircle,
-  faUser,
-  faTools,
-  faClock,
-  faMapMarkerAlt,
-  faFirstAid,
-  faShieldAlt,
-  faSadCry,
-  faTrash,
   faMinus,
-  faMinusCircle,
-  faPlusCircle,
-  faThermometerHalf
-} from "@fortawesome/free-solid-svg-icons";
+faSadCry,
+faMinusCircle,
+faBuilding,
+faDoorClosed,
+faTrash,
+faCheckSquare,
+faExclamationTriangle,
+faBroom,
+faBell,
+faFirstAid,
+faUserPlus,
+faThermometerHalf,
+faExclamation,
+faPlusCircle,
+faExclamationCircle,
+faMapMarkerAlt,
+faClock,
+faChartPie,
+faUser,
+faShieldAlt,
+faArrowLeft,
+faHome,
+faTools } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(
-  faBroom,
-  faExclamationCircle,
-  faUser,
-  faTools,
-  faClock,
-  faMapMarkerAlt,
-  faFirstAid,
-  faShieldAlt,
-  faSadCry,
-  faTrash,
   faMinus,
-  faMinusCircle,
-  faPlusCircle,
-  faThermometerHalf
+faSadCry,
+faMinusCircle,
+faBuilding,
+faDoorClosed,
+faTrash,
+faCheckSquare,
+faExclamationTriangle,
+faBroom,
+faBell,
+faFirstAid,
+faUserPlus,
+faThermometerHalf,
+faExclamation,
+faPlusCircle,
+faExclamationCircle,
+faMapMarkerAlt,
+faClock,
+faChartPie,
+faUser,
+faShieldAlt,
+faArrowLeft,
+faHome,
+faTools
 );
-
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // Buefy
