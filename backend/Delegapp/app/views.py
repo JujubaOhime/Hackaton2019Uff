@@ -1,6 +1,6 @@
-from app.models import User, Relacionado, Local, Category, Report, ReportRecord, Employee, act_in, describe, describe_record
+from app.models import User, Relacionado, Local, Category, Report, ReportRecord, Employee, act_in, describe, describe_record, is_reported
 from rest_framework import viewsets
-from app.serializers import UserSerializer, RelacionadoSerializer, LocalSerializer, CategorySerializer, ReportSerializer, ReportRecordSerializer, EmployeeSerializer, act_inSerializer, describeSerializer, describe_recordSerializer
+from app.serializers import UserSerializer, RelacionadoSerializer, LocalSerializer, CategorySerializer, ReportSerializer, ReportRecordSerializer, EmployeeSerializer, act_inSerializer, describeSerializer, describe_recordSerializer, is_reportedSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -74,3 +74,11 @@ class describe_recordViewSet(viewsets.ModelViewSet):
     """
     queryset = describe_record.objects.all()
     serializer_class = describe_recordSerializer
+
+
+class is_reportedViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = is_reported.objects.all()
+    serializer_class = is_reportedSerializer

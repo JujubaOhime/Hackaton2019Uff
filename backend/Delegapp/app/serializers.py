@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from app.models import User, Relacionado, Category, Local, Report, ReportRecord, Employee, act_in, describe, describe_record
+from app.models import User, Relacionado, Category, Local, Report, ReportRecord, Employee, act_in, describe, describe_record, is_reported
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     #relacionados = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
@@ -18,6 +18,7 @@ class RelacionadoSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class CategorySerializer(serializers.HyperlinkedModelSerializer):
+    #father_category = serializers.PrimaryKeyRelatedField(read_only=False, queryset=Category.objects.all())
 
     class Meta:
         model = Category
@@ -80,3 +81,12 @@ class describe_recordSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = describe_record
         fields = ['area', 'local', 'report_record']
+
+
+class is_reportedSerializer(serializers.HyperlinkedModelSerializer):
+    problem = serializers.PrimaryKeyRelatedField(read_only=False, queryset=Report.objects.all())
+    employee = serializers.PrimaryKeyRelatedField(read_only=False, queryset=Employee.objects.all())
+
+    class Meta:
+        model = is_reported
+        fields = ['problem', 'employee']

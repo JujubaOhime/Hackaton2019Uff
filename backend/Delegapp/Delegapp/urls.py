@@ -13,6 +13,7 @@ router.register(r'employee', views.EmployeeViewSet),
 router.register(r'act_in', views.act_inViewSet),
 router.register(r'describe', views.describeViewSet),
 router.register(r'describe_record', views.describe_recordViewSet),
+router.register(r'is_reported', views.is_reportedViewSet),
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
