@@ -6,14 +6,15 @@
         <h1 class="title header">Dashboard</h1>
 
         <!-- Locale -->
-        <div class="locale">
-          <font-awesome-icon
-            icon="map-marker-alt"
-            class="has-text-danger"
-          ></font-awesome-icon>
-          <span class="has-text-white">
+        <div class="locale-wrapper">
+          <b-button
+            type="is-danger"
+            icon-left="map-marker-alt"
+            rounded
+            @click="localeChoose"
+          >
             {{ locale }}
-          </span>
+          </b-button>
         </div>
 
         <!-- Tiles -->
@@ -49,17 +50,23 @@ export default {
     locale() {
       return this.$store.getters.localeSelected.name;
     }
+  },
+  methods: {
+    localeChoose() {
+      this.$router.push({ name: "localeChoose" });
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
 @import "@/styles/theme.scss";
-.locale {
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  text-align: center;
+.locale-wrapper {
+  margin: 0rem auto 2rem;
+  .button {
+    display: flex;
+    margin: 0 auto;
+  }
   svg {
     font-size: 1rem;
   }

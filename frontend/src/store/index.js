@@ -16,7 +16,11 @@ export const store = new Vuex.Store({
             icon: "broom",
             description: "Nenhum",
             priority: 80,
-            people: []
+            people: [
+              {
+                name: "João Almeida"
+              }
+            ]
           },
           {
             category: "Limpeza",
@@ -42,7 +46,10 @@ export const store = new Vuex.Store({
             priority: 30,
             people: [
               {
-                name: "Thomas"
+                name: "Thomas Lopes"
+              },
+              {
+                name: "Amelia Guerreiro"
               }
             ]
           },
@@ -54,13 +61,13 @@ export const store = new Vuex.Store({
             priority: 100,
             people: [
               {
-                name: "Thomas"
+                name: "Thomas Gouveia"
               },
               {
-                name: "Thomas"
+                name: "Felipe Simões"
               },
               {
-                name: "Thomas"
+                name: "Gabriel Caetano"
               }
             ]
           }

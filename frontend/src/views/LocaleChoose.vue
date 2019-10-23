@@ -130,6 +130,9 @@ export default {
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      font-style: italic;
+      font-family: "Fira Code iScript";
+      font-size: 1.2rem;
       svg {
         font-size: 1.5rem;
         flex-grow: 1;
